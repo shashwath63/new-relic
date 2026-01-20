@@ -19,7 +19,7 @@ const  express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    logger.log('route hit');
+    logger.info('route hit');
     if (Math.random() < 0.5) {
 		logger.error("there was an err");
 	}

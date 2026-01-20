@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NEW_RELIC_APP_NAME=node-app NEW_RELIC_LICENSE_KEY=${process.env.NEW_RELIC_LICENSE_KEY} node --experimental-loader=newrelic/esm-loader.mjs index.js"
+    "start": "NEW_RELIC_APP_NAME=node-app node -r dotenv/config index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "newrelic": "^13.9.2"
   }

@@ -1,0 +1,17 @@
+{
+  "name": "new_relic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NEW_RELIC_APP_NAME=node-app NEW_RELIC_LICENSE_KEY=${process.env.NEW_RELIC_LICENSE_KEY} node --experimental-loader=newrelic/esm-loader.mjs index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "newrelic": "^13.9.2"
+  }
+}

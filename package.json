@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NEW_RELIC_APP_NAME=node-app node -r dotenv/config index.js"
+    "start": "NEW_RELIC_APPLICATION_LOGGING_FORWARDING_ENABLED=true NEW_RELIC_APP_NAME=node-app node -r dotenv/config index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "newrelic": "^13.9.2"
+    "newrelic": "^13.9.2",
+    "winston": "^3.19.0"
   }
 }
